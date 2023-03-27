@@ -1,0 +1,21 @@
+.product {
+  width: 280px;
+  border: 2px solid #95a0a7;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  margin: 10px;
+}
+.datiles {
+  height: 140px;
+}
+.rating {
+  margin-bottom: 20px;
+}
+.img {
+  width: 250px;
+  border-radius: 10px;
+}
+.btn {
+  background-color: #ffe0b3;
+}

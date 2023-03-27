@@ -1,0 +1,18 @@
+.flex {
+  display: flex;
+}
+.allproducts {
+  margin: 140px 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.siderBar {
+  position: fixed;
+  right: 0;
+  top: 80px;
+  width: 30%;
+  height: 100vh;
+  padding: 10px;
+  line-height: 40px;
+  background-color: #ffe0b3;
+}

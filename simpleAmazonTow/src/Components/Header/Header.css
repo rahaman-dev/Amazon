@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #1c2b35;
+}
+.subContainer {
+  display: flex;
+  margin-right: 5rem;
+}
+.logo {
+  margin-left: 5rem;
+}
+.subContainer li a {
+  color: #fff;
+  padding: 20px;
+}
