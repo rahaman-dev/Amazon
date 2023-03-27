@@ -15,11 +15,13 @@ const AllProdcuts = () => {
         <div className="allproducts">
           {products.map((product) => (
             <Product
-              img={product.img}
-              name={product.name}
-              price={product.price}
-              category={product.category}
-              ratings={product.ratings}
+              key={product.id}
+              //   img={product.img}
+              //   name={product.name}
+              //   price={product.price}
+              //   category={product.category}
+              //   ratings={product.ratings}
+              product={product}
             ></Product>
           ))}
         </div>

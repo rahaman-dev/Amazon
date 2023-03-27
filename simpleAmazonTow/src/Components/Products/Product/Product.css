@@ -2,20 +2,29 @@
   width: 280px;
   border: 2px solid #95a0a7;
   border-radius: 10px;
-  padding: 10px;
   margin-top: 20px;
   margin: 10px;
+  position: relative;
 }
 .datiles {
-  height: 140px;
+  height: 200px;
+  padding: 10px;
 }
 .rating {
   margin-bottom: 20px;
 }
 .img {
-  width: 250px;
+  width: 100%;
   border-radius: 10px;
 }
 .btn {
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+  width: 100%;
+  height: 45px;
+  margin-top: 30px;
   background-color: #ffe0b3;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
