@@ -4,11 +4,20 @@ import "./AppProducts.css";
 
 const AllProdcuts = () => {
   const [products, setProducts] = useState([]);
+  const [child, setChild] = useState([]);
+
   useEffect(() => {
     fetch("../../../public/fakeData/products.json")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
+
+  const addToCard = (product) => {
+    const newChild = [...child, product];
+    console.log(newChild);
+    setChild(newChild);
+  };
+
   return (
     <div className="flex">
       <div className="products">
@@ -16,12 +25,8 @@ const AllProdcuts = () => {
           {products.map((product) => (
             <Product
               key={product.id}
-              //   img={product.img}
-              //   name={product.name}
-              //   price={product.price}
-              //   category={product.category}
-              //   ratings={product.ratings}
               product={product}
+              addToCard={addToCard}
             ></Product>
           ))}
         </div>
@@ -33,10 +38,20 @@ const AllProdcuts = () => {
           Order Summary
         </h2>
         <p>
-          <span>Selected Items:</span>
+          Selected Items:
+          <span
+          // style={{
+          //   color: "White",
+          //   backgroundColor: "red",
+          //   padding: "2px",
+          //   borderRadius: "15px",
+          // }}
+          >
+            {child.length}
+          </span>
         </p>
         <p>
-          <span>Total Price: $</span>
+          Total Price: $<span> </span>
         </p>
         <p>
           <span>Total Shipping Charge: $</span>

@@ -28,3 +28,9 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+.btn:hover {
+  background-color: orange;
+}
+.btn:focus {
+  outline: none;
+}
